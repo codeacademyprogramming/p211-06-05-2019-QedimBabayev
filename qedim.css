@@ -1,0 +1,138 @@
+a{
+    text-decoration: none;
+    color: #222222;
+
+
+
+
+}
+
+.first{
+    width: 200px;
+    height: 95px;
+    background-color: rgb(218, 218, 218);   
+    
+    cursor: pointer;  
+    position: relative;
+}
+.first div:first-child{
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.layer{
+    width: 100%;
+    height:0%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:all 0.3s ease-in;
+
+
+}
+.first:hover .layer{
+    height: 100%;
+} 
+.first:hover a{
+    color: #Fff;    
+}
+.first{
+    margin-top: 20px;
+}
+.main .overlay_up,
+.main .overlay_down{
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+    background-color:  blue
+
+}
+.main .overlay_up{
+    top:50%;
+
+}
+.main .overlay_down{
+    bottom:50%;
+
+}
+.main:hover .overlay_up,
+.main:hover .overlay_down{
+    height: 50%;
+}
+.overlay{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+    background-color: blue;
+    top: 0;
+    left: 0;
+
+}
+.second:hover .overlay{
+    width: 100%;
+
+}
+.overlay1,
+.overlay2{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0, 0, 0, 1.32);
+    background-color: blue;
+
+
+}
+.overlay1{
+    left: 50%;
+}
+.overlay2{
+    right: 50%;
+}
+.third:hover .overlay1,
+.third:hover .overlay2{
+    width: 50%;
+}
+.fourth .overlay1{
+    left: 0;
+
+}
+.fourth .overlay2{
+    right: 0;
+
+}
+.fourth:hover .overlay1,
+.fourth:hover .overlay2{
+    width: 50%;
+}
+
+.overlayer{
+    position: absolute;
+    width:100%;
+    height:0;
+    overflow: hidden;
+    bottom: 0;
+    transition: all 0.3s ease-in;
+    background-color: blue;
+
+
+}
+.fifth:hover .overlayer{
+    height: 100%;
+}
+
+
+
+
+
